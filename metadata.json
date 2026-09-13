@@ -1,0 +1,6 @@
+{
+  "name": "MBD通知系統 - 耀西蘑菇島冒險",
+  "description": "黃色大地與紅蘑菇森林・耀西出院護航大作戰！輕鬆建立多組出院個案並一鍵產生格式化通知文字。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

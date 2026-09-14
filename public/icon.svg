@@ -1,323 +1,351 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
   <defs>
-    <!-- Background: Sunlit cozy room atmosphere -->
-    <linearGradient id="roomBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fffbeb" />
-      <stop offset="40%" stop-color="#fef3c7" />
-      <stop offset="70%" stop-color="#fed7aa" />
-      <stop offset="100%" stop-color="#fde68a" />
+    <!-- Background Canvas: Warm cozy cream squircle -->
+    <linearGradient id="bgCream" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#faf5ec" />
+      <stop offset="50%" stop-color="#f5efe4" />
+      <stop offset="100%" stop-color="#ece4d4" />
     </linearGradient>
 
-    <!-- Warm Golden Window Sunlight Beam -->
-    <linearGradient id="sunBeam" x1="0%" y1="0%" x2="80%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55" />
-      <stop offset="50%" stop-color="#fef08a" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0" />
-    </linearGradient>
-
-    <!-- Turtle Skin: Soft Pastel Warm Lime Green -->
-    <radialGradient id="turtleHeadSkin" cx="42%" cy="38%" r="62%">
-      <stop offset="0%" stop-color="#e2f58e" />
-      <stop offset="45%" stop-color="#cbe66d" />
-      <stop offset="85%" stop-color="#a4d14f" />
-      <stop offset="100%" stop-color="#88b539" />
+    <!-- Turtle Head Skin Gradient (Warm Sage/Olive Green) -->
+    <radialGradient id="turtleHead" cx="48%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#dde1c0" />
+      <stop offset="50%" stop-color="#cad0a5" />
+      <stop offset="85%" stop-color="#b6bc8d" />
+      <stop offset="100%" stop-color="#9fa676" />
     </radialGradient>
 
-    <radialGradient id="limbSkin" cx="40%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#d9f182" />
-      <stop offset="60%" stop-color="#b5dd5a" />
-      <stop offset="100%" stop-color="#8bb93b" />
+    <!-- Turtle Limbs Skin Gradient -->
+    <radialGradient id="turtleLimb" cx="45%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#d6dcba" />
+      <stop offset="60%" stop-color="#bfc696" />
+      <stop offset="100%" stop-color="#a4ab7b" />
     </radialGradient>
 
-    <!-- Turtle Belly (Plastron): Warm Cream -->
-    <linearGradient id="bellySkin" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#fffbeb" />
-      <stop offset="50%" stop-color="#fef08a" />
-      <stop offset="100%" stop-color="#fde047" />
-    </linearGradient>
-
-    <!-- Turtle Shell: Rich Warm Honey Brown -->
-    <radialGradient id="shellBrown" cx="45%" cy="35%" r="65%">
-      <stop offset="0%" stop-color="#d97706" />
-      <stop offset="40%" stop-color="#b45309" />
-      <stop offset="80%" stop-color="#92400e" />
-      <stop offset="100%" stop-color="#78350f" />
+    <!-- Turtle Shell Outer (Rich Warm Cocoa Earth Brown) -->
+    <radialGradient id="shellOuter" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#9a7657" />
+      <stop offset="50%" stop-color="#805d40" />
+      <stop offset="85%" stop-color="#69482d" />
+      <stop offset="100%" stop-color="#543820" />
     </radialGradient>
 
-    <linearGradient id="scuteBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="100%" stop-color="#78350f" />
+    <!-- Shell Inner Rim (Warm Sandy Tan) -->
+    <linearGradient id="shellRim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e9dcbf" />
+      <stop offset="100%" stop-color="#d4c29e" />
     </linearGradient>
 
-    <!-- Cheek Blush Radial Glow -->
+    <!-- Belly Plastron (Creamy Warm Yellow Tan) -->
+    <linearGradient id="bellyPlastron" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdf6e7" />
+      <stop offset="40%" stop-color="#f5e8cf" />
+      <stop offset="85%" stop-color="#ebd3ad" />
+      <stop offset="100%" stop-color="#dfc499" />
+    </linearGradient>
+
+    <!-- Book Cover (Earthy Muted Olive-Sage Green) -->
+    <linearGradient id="bookCover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a8b290" />
+      <stop offset="40%" stop-color="#95a07c" />
+      <stop offset="100%" stop-color="#7a8562" />
+    </linearGradient>
+
+    <!-- Coffee inside Mug -->
+    <linearGradient id="coffeeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#63391b" />
+      <stop offset="100%" stop-color="#45230c" />
+    </linearGradient>
+
+    <!-- Heart in Bubble (Warm Coral Red) -->
+    <linearGradient id="heartRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e9695d" />
+      <stop offset="100%" stop-color="#d24f43" />
+    </linearGradient>
+
+    <!-- Soft Cheek Blush -->
     <radialGradient id="cheekBlush" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fb7185" stop-opacity="0.85" />
-      <stop offset="40%" stop-color="#f43f5e" stop-opacity="0.6" />
-      <stop offset="80%" stop-color="#fda4af" stop-opacity="0.25" />
-      <stop offset="100%" stop-color="#fda4af" stop-opacity="0" />
+      <stop offset="0%" stop-color="#e87e74" stop-opacity="0.65" />
+      <stop offset="50%" stop-color="#ed938a" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ed938a" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Checkered Gingham Pattern for Bowtie -->
-    <pattern id="gingham" width="16" height="16" patternUnits="userSpaceOnUse">
-      <rect width="16" height="16" fill="#ffffff" />
-      <rect x="0" y="0" width="16" height="8" fill="#f87171" opacity="0.75" />
-      <rect x="0" y="0" width="8" height="16" fill="#f87171" opacity="0.75" />
-      <rect x="0" y="0" width="8" height="8" fill="#dc2626" opacity="0.95" />
-      <rect x="8" y="8" width="8" height="8" fill="#dc2626" opacity="0.95" />
-    </pattern>
-
-    <pattern id="ginghamKnot" width="10" height="10" patternUnits="userSpaceOnUse">
-      <rect width="10" height="10" fill="#ffffff" />
-      <rect x="0" y="0" width="10" height="5" fill="#f87171" opacity="0.75" />
-      <rect x="0" y="0" width="5" height="10" fill="#f87171" opacity="0.75" />
-      <rect x="0" y="0" width="5" height="5" fill="#b91c1c" opacity="0.95" />
-      <rect x="5" y="5" width="5" height="5" fill="#b91c1c" opacity="0.95" />
-    </pattern>
-
-    <!-- Soft Shadow for Characters & Ground -->
-    <filter id="charDropShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#78350f" flood-opacity="0.24" />
+    <!-- Character Ground Soft Shadow -->
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#5c4431" flood-opacity="0.14" />
     </filter>
 
-    <filter id="glowLight" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="8" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    <filter id="bubbleShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="3" stdDeviation="3.5" flood-color="#805d40" flood-opacity="0.16" />
     </filter>
   </defs>
 
-  <!-- 1. Squircle App Icon Container with Smooth Corners -->
-  <rect x="16" y="16" width="480" height="480" rx="108" ry="108" fill="url(#roomBg)" stroke="#f59e0b" stroke-width="10" />
-  
-  <!-- Subtle Inner Golden Border -->
-  <rect x="26" y="26" width="460" height="460" rx="98" ry="98" fill="none" stroke="#ffffff" stroke-width="4" opacity="0.8" />
+  <!-- 1. Squircle App Icon Base Container -->
+  <rect x="8" y="8" width="496" height="496" rx="116" ry="116" fill="url(#bgCream)" stroke="#ece2d0" stroke-width="4" />
 
-  <!-- 2. Cozy Room Details in Background -->
-  <!-- Window Panes & Sunlight on Left -->
-  <g opacity="0.35">
-    <rect x="36" y="40" width="55" height="110" rx="6" fill="#ffffff" />
-    <rect x="98" y="40" width="55" height="110" rx="6" fill="#ffffff" />
-    <!-- Plants on window sill -->
-    <circle cx="58" cy="115" r="8" fill="#4ade80" />
-    <circle cx="75" cy="108" r="10" fill="#22c55e" />
-    <circle cx="120" cy="110" r="9" fill="#16a34a" />
-    <!-- Daisies -->
-    <circle cx="68" cy="98" r="5" fill="#ffffff" />
-    <circle cx="68" cy="98" r="2" fill="#facc15" />
-    <circle cx="126" cy="94" r="5" fill="#ffffff" />
-    <circle cx="126" cy="94" r="2" fill="#facc15" />
-  </g>
+  <!-- Ground Soft Shadow Under Turtle -->
+  <ellipse cx="256" cy="455" rx="158" ry="18" fill="#805d40" opacity="0.22" />
+  <ellipse cx="256" cy="453" rx="120" ry="11" fill="#543820" opacity="0.18" />
 
-  <!-- Chalkboard on Right with "Good Day ♡" -->
-  <g transform="translate(378, 50)" opacity="0.7">
-    <!-- Board frame -->
-    <rect x="0" y="0" width="90" height="125" rx="8" fill="#92400e" stroke="#78350f" stroke-width="4" />
-    <rect x="6" y="6" width="78" height="113" rx="4" fill="#1e293b" />
-    <!-- Chalk text -->
-    <text x="45" y="42" font-family="'Fredoka', 'Noto Sans TC', sans-serif" font-weight="700" font-size="14" fill="#ffffff" text-anchor="middle" opacity="0.9">Good</text>
-    <text x="45" y="62" font-family="'Fredoka', 'Noto Sans TC', sans-serif" font-weight="700" font-size="14" fill="#ffffff" text-anchor="middle" opacity="0.9">Day</text>
-    <path d="M40,82 C38,76 31,76 31,82 C31,89 45,98 45,98 C45,98 59,89 59,82 C59,76 52,76 50,82 Z" fill="#ffffff" opacity="0.85" />
-  </g>
+  <!-- 2. MAIN CHARACTER GROUP -->
+  <g filter="url(#softShadow)">
 
-  <!-- Window Sunlight Rays Diagonally Illuminating Room -->
-  <polygon points="16,16 280,16 460,496 16,496" fill="url(#sunBeam)" />
-
-  <!-- Cozy Striped Floor Rug -->
-  <g>
-    <!-- Rug Base -->
-    <ellipse cx="256" cy="445" rx="205" ry="42" fill="#e0f2fe" opacity="0.8" />
-    <!-- Blue & Yellow Rug Stripes -->
-    <path d="M70,442 C120,428 392,428 442,442 C392,456 120,456 70,442 Z" fill="#bae6fd" opacity="0.7" />
-    <path d="M90,452 C140,438 372,438 422,452 C372,466 140,466 90,452 Z" fill="#fef08a" opacity="0.8" />
-    <!-- Rug Texture fringe -->
-    <line x1="60" y1="442" x2="452" y2="442" stroke="#ffffff" stroke-width="3" stroke-dasharray="4,4" opacity="0.7" />
-  </g>
-
-  <!-- Red Ball of Yarn on Bottom-Left (Just like the photo!) -->
-  <g transform="translate(42, 360)">
-    <!-- Yarn Drop Shadow -->
-    <ellipse cx="44" cy="74" rx="34" ry="12" fill="#78350f" opacity="0.25" />
-    <!-- Yarn Main Sphere -->
-    <circle cx="44" cy="44" r="38" fill="#e11d48" />
-    <!-- Texture ridges -->
-    <path d="M12,44 Q44,20 76,44 Q44,68 12,44 Z" stroke="#be123c" stroke-width="4" fill="none" opacity="0.8" />
-    <path d="M20,24 Q52,48 68,24" stroke="#f43f5e" stroke-width="3.5" fill="none" />
-    <path d="M22,64 Q50,40 66,64" stroke="#be123c" stroke-width="3.5" fill="none" />
-    <circle cx="44" cy="44" r="38" fill="none" stroke="#fb7185" stroke-width="3" opacity="0.4" />
-    <!-- Loose Yarn String Winding onto Rug -->
-    <path d="M68,68 Q100,85 145,82" stroke="#e11d48" stroke-width="4.5" stroke-linecap="round" fill="none" />
-  </g>
-
-  <!-- Soft Shadow Under Turtle -->
-  <ellipse cx="256" cy="442" rx="140" ry="24" fill="#78350f" opacity="0.28" />
-
-  <!-- 3. THE ADORABLE BABY TURTLE (Exact Match to Picture) -->
-  <g filter="url(#charDropShadow)">
-
-    <!-- TURTLE SHELL (Behind Body) -->
+    <!-- TURTLE SHELL (Deep Earth Brown with textured rim scutes) -->
     <g>
-      <!-- Shell Backing Rim -->
-      <ellipse cx="256" cy="326" rx="156" ry="118" fill="url(#shellBrown)" stroke="#572205" stroke-width="5" />
-      
-      <!-- Shell Scute Plates / Grooves (Segmented brown tortoise shell) -->
-      <!-- Left rim scutes -->
-      <path d="M110,310 C125,280 155,260 178,255 L168,340 C140,340 120,325 110,310 Z" fill="#a1470b" stroke="#572205" stroke-width="3.5" />
-      <path d="M116,335 C130,355 155,372 180,380 L168,340 Z" fill="#7c2d12" stroke="#572205" stroke-width="3.5" />
-      
-      <!-- Right rim scutes -->
-      <path d="M402,310 C387,280 357,260 334,255 L344,340 C372,340 392,325 402,310 Z" fill="#a1470b" stroke="#572205" stroke-width="3.5" />
-      <path d="M396,335 C382,355 357,372 332,380 L344,340 Z" fill="#7c2d12" stroke="#572205" stroke-width="3.5" />
+      <!-- Outer Shell Silhouette -->
+      <path d="M110,310 C100,240 145,178 256,175 C367,178 412,240 402,310 C395,365 372,416 335,438 C290,455 222,455 177,438 C140,416 117,365 110,310 Z"
+            fill="url(#shellOuter)" stroke="#452c17" stroke-width="5" stroke-linejoin="round" />
 
-      <!-- Center Shell Highlighting -->
-      <ellipse cx="256" cy="305" rx="120" ry="85" fill="#b45309" stroke="#78350f" stroke-width="3" opacity="0.6" />
+      <!-- Inner Shell Rim Cream Band -->
+      <path d="M128,308 C120,250 156,200 256,198 C356,200 392,250 384,308 C378,355 358,402 326,420 C286,436 226,436 186,420 C154,402 134,355 128,308 Z"
+            fill="none" stroke="url(#shellRim)" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+
+      <!-- Individual Shell Scutes Segments (Left & Right Flanges) -->
+      <!-- Left Rim Scutes -->
+      <path d="M116,260 C125,258 138,266 142,285 C132,290 120,288 112,280 Z" fill="#755236" stroke="#452c17" stroke-width="3" />
+      <path d="M110,305 C122,302 138,310 140,330 C128,335 116,330 110,320 Z" fill="#755236" stroke="#452c17" stroke-width="3" />
+      <path d="M118,348 C130,344 144,352 148,372 C136,378 124,370 116,360 Z" fill="#755236" stroke="#452c17" stroke-width="3" />
+      <path d="M136,390 C148,385 160,392 166,410 C152,416 140,408 132,400 Z" fill="#755236" stroke="#452c17" stroke-width="3" />
+
+      <!-- Right Rim Scutes -->
+      <path d="M396,260 C387,258 374,266 370,285 C380,290 392,288 400,280 Z" fill="#755236" stroke="#452c17" stroke-width="3" />
+      <path d="M402,305 C390,302 374,310 372,330 C384,335 396,330 402,320 Z" fill="#755236" stroke="#452c17" stroke-width="3" />
+      <path d="M394,348 C382,344 368,352 364,372 C376,378 388,370 396,360 Z" fill="#755236" stroke="#452c17" stroke-width="3" />
+      <path d="M376,390 C364,385 352,392 346,410 C360,416 372,408 380,400 Z" fill="#755236" stroke="#452c17" stroke-width="3" />
     </g>
 
-    <!-- BACK LEGS (Sitting chubby on sides) -->
+    <!-- TURTLE BELLY PLASTRON (Warm cream with horizontal & vertical grooved plates) -->
     <g>
-      <!-- Left Back Leg -->
-      <ellipse cx="145" cy="406" rx="34" ry="25" transform="rotate(-15, 145, 406)" fill="url(#limbSkin)" stroke="#5f8324" stroke-width="4" />
-      <!-- Left Back Claws -->
-      <circle cx="122" cy="412" r="6" fill="#fef3c7" stroke="#854d0e" stroke-width="1.5" />
-      <circle cx="134" cy="422" r="6.5" fill="#fef3c7" stroke="#854d0e" stroke-width="1.5" />
-      <circle cx="148" cy="426" r="6" fill="#fef3c7" stroke="#854d0e" stroke-width="1.5" />
+      <!-- Base Belly Silhouette -->
+      <path d="M182,280 C182,280 215,270 256,270 C297,270 330,280 330,280 C345,320 348,380 336,415 C310,442 285,448 256,448 C227,448 202,442 176,415 C164,380 167,320 182,280 Z"
+            fill="url(#bellyPlastron)" stroke="#826243" stroke-width="4.5" stroke-linejoin="round" />
 
-      <!-- Right Back Leg -->
-      <ellipse cx="367" cy="406" rx="34" ry="25" transform="rotate(15, 367, 406)" fill="url(#limbSkin)" stroke="#5f8324" stroke-width="4" />
-      <!-- Right Back Claws -->
-      <circle cx="390" cy="412" r="6" fill="#fef3c7" stroke="#854d0e" stroke-width="1.5" />
-      <circle cx="378" cy="422" r="6.5" fill="#fef3c7" stroke="#854d0e" stroke-width="1.5" />
-      <circle cx="364" cy="426" r="6" fill="#fef3c7" stroke="#854d0e" stroke-width="1.5" />
+      <!-- Horizontal Plastron Division Grooves -->
+      <path d="M180,314 Q256,322 332,314" stroke="#ab8c69" stroke-width="3.5" stroke-linecap="round" fill="none" />
+      <path d="M174,352 Q256,360 338,352" stroke="#ab8c69" stroke-width="3.5" stroke-linecap="round" fill="none" />
+      <path d="M180,388 Q256,396 332,388" stroke="#ab8c69" stroke-width="3.5" stroke-linecap="round" fill="none" />
+      <path d="M198,422 Q256,428 314,422" stroke="#ab8c69" stroke-width="3" stroke-linecap="round" fill="none" />
+
+      <!-- Center Vertical Division Line -->
+      <path d="M256,272 L256,445" stroke="#ab8c69" stroke-width="3.5" stroke-linecap="round" />
+
+      <!-- Subtle inner shade on plastron boundaries -->
+      <path d="M180,282 C170,330 172,390 182,416" stroke="#cbb38e" stroke-width="3" fill="none" opacity="0.6" />
+      <path d="M332,282 C342,330 340,390 330,416" stroke="#cbb38e" stroke-width="3" fill="none" opacity="0.6" />
     </g>
 
-    <!-- FRONT BELLY / PLASTRON (Cream / Yellowish with soft ridges) -->
+    <!-- BACK FEET (Two round chubby sage-green feet at bottom) -->
+    <!-- Left Foot -->
     <g>
-      <ellipse cx="256" cy="365" rx="76" ry="68" fill="url(#bellySkin)" stroke="#a16207" stroke-width="3.5" />
-      <!-- Horizontal belly ridges -->
-      <path d="M205,340 Q256,350 307,340" stroke="#ca8a04" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.8" />
-      <path d="M195,372 Q256,382 317,372" stroke="#ca8a04" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.8" />
-      <path d="M210,405 Q256,415 302,405" stroke="#ca8a04" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.8" />
-      <!-- Center vertical seam -->
-      <line x1="256" y1="318" x2="256" y2="425" stroke="#ca8a04" stroke-width="2.5" opacity="0.6" />
+      <ellipse cx="180" cy="432" rx="36" ry="26" fill="url(#turtleLimb)" stroke="#453221" stroke-width="4.5" />
+      <!-- Foot Spots -->
+      <ellipse cx="166" cy="426" rx="6" ry="5" fill="#889262" opacity="0.75" />
+      <ellipse cx="182" cy="436" rx="5.5" ry="4.5" fill="#889262" opacity="0.75" />
+      <ellipse cx="196" cy="428" rx="5" ry="4" fill="#889262" opacity="0.75" />
+      <!-- Gentle toe indent lines -->
+      <path d="M162,448 C166,440 170,442 174,450" stroke="#453221" stroke-width="3" stroke-linecap="round" fill="none" />
+      <path d="M182,453 C186,445 190,447 194,453" stroke="#453221" stroke-width="3" stroke-linecap="round" fill="none" />
     </g>
 
-    <!-- FRONT CHUBBY FLIPPERS / LEGS (Resting forward with spotted pattern and claws) -->
-    <!-- Left Front Leg -->
+    <!-- Right Foot -->
     <g>
-      <path d="M175,295 C175,295 142,325 142,375 C142,425 185,445 220,442 C236,441 245,430 242,400 C238,360 215,315 175,295 Z" fill="url(#limbSkin)" stroke="#52701d" stroke-width="4.5" />
-      <!-- Spotted scales on left leg -->
-      <g fill="#70972b" opacity="0.65">
-        <circle cx="168" cy="335" r="9" />
-        <circle cx="152" cy="365" r="8" />
-        <circle cx="180" cy="368" r="9.5" />
-        <circle cx="165" cy="398" r="8" />
-        <circle cx="192" cy="398" r="8.5" />
-        <circle cx="218" cy="385" r="7.5" />
-        <circle cx="205" cy="355" r="8" />
+      <ellipse cx="332" cy="432" rx="36" ry="26" fill="url(#turtleLimb)" stroke="#453221" stroke-width="4.5" />
+      <!-- Foot Spots -->
+      <ellipse cx="346" cy="426" rx="6" ry="5" fill="#889262" opacity="0.75" />
+      <ellipse cx="330" cy="436" rx="5.5" ry="4.5" fill="#889262" opacity="0.75" />
+      <ellipse cx="316" cy="428" rx="5" ry="4" fill="#889262" opacity="0.75" />
+      <!-- Gentle toe indent lines -->
+      <path d="M318,453 C322,445 326,447 330,453" stroke="#453221" stroke-width="3" stroke-linecap="round" fill="none" />
+      <path d="M338,450 C342,442 346,440 350,448" stroke="#453221" stroke-width="3" stroke-linecap="round" fill="none" />
+    </g>
+
+    <!-- CHUBBY ARMS HOLDING THE COFFEE MUG AND BOOK -->
+    <!-- Left Arm (Holding Coffee Mug) -->
+    <g>
+      <path d="M186,290 C156,298 132,326 130,360 C128,390 152,408 178,400 C194,395 200,378 196,356 C194,334 190,305 186,290 Z"
+            fill="url(#turtleLimb)" stroke="#453221" stroke-width="4.5" stroke-linejoin="round" />
+      <!-- Spots on left arm -->
+      <circle cx="150" cy="336" r="6" fill="#889262" opacity="0.75" />
+      <circle cx="162" cy="324" r="5.5" fill="#889262" opacity="0.75" />
+      <circle cx="144" cy="358" r="6.5" fill="#889262" opacity="0.75" />
+      <circle cx="158" cy="370" r="5" fill="#889262" opacity="0.75" />
+    </g>
+
+    <!-- Right Arm (Holding Book) -->
+    <g>
+      <path d="M326,290 C356,298 380,326 382,360 C384,390 360,408 334,400 C318,395 312,378 316,356 C318,334 322,305 326,290 Z"
+            fill="url(#turtleLimb)" stroke="#453221" stroke-width="4.5" stroke-linejoin="round" />
+      <!-- Spots on right arm -->
+      <circle cx="362" cy="336" r="6" fill="#889262" opacity="0.75" />
+      <circle cx="350" cy="324" r="5.5" fill="#889262" opacity="0.75" />
+      <circle cx="368" cy="358" r="6.5" fill="#889262" opacity="0.75" />
+      <circle cx="354" cy="370" r="5" fill="#889262" opacity="0.75" />
+    </g>
+
+    <!-- LEFT HAND ITEM: WHITE COFFEE MUG WITH "Good Food Good Day ☺" -->
+    <g transform="translate(142, 320)">
+      <!-- Mug Shadow -->
+      <ellipse cx="50" cy="85" rx="36" ry="9" fill="#543820" opacity="0.18" />
+
+      <!-- Mug Handle on the left -->
+      <path d="M22,26 C-4,26 -4,64 22,64" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" />
+      <path d="M22,26 C-4,26 -4,64 22,64" fill="none" stroke="#453221" stroke-width="4.5" stroke-linecap="round" />
+      <!-- Handle inner hole -->
+      <path d="M20,34 C6,34 6,56 20,56" fill="none" stroke="#453221" stroke-width="4.5" stroke-linecap="round" />
+
+      <!-- Mug Body -->
+      <path d="M20,18 C20,12 80,12 80,18 L76,78 C76,85 24,85 24,78 Z"
+            fill="#ffffff" stroke="#453221" stroke-width="4.5" stroke-linejoin="round" />
+
+      <!-- Mug Rim & Warm Coffee Surface Inside -->
+      <ellipse cx="50" cy="18" rx="28" ry="8" fill="#e8dfce" stroke="#453221" stroke-width="4" />
+      <ellipse cx="50" cy="19" rx="23" ry="5.5" fill="url(#coffeeGrad)" />
+
+      <!-- Text on Mug: "Good Food Good Day ☺" in cute hand lettering -->
+      <text x="50" y="38" font-family="'Nunito', 'Comfortaa', 'Quicksand', 'Arial Rounded MT Bold', sans-serif"
+            font-size="12" font-weight="800" fill="#3a2514" text-anchor="middle" letter-spacing="0.2">Good</text>
+      <text x="50" y="52" font-family="'Nunito', 'Comfortaa', 'Quicksand', 'Arial Rounded MT Bold', sans-serif"
+            font-size="12" font-weight="800" fill="#3a2514" text-anchor="middle" letter-spacing="0.2">Food</text>
+      <text x="50" y="66" font-family="'Nunito', 'Comfortaa', 'Quicksand', 'Arial Rounded MT Bold', sans-serif"
+            font-size="10.5" font-weight="800" fill="#3a2514" text-anchor="middle" letter-spacing="0.1">Good Day</text>
+      <!-- Smiley Face below -->
+      <circle cx="47" cy="74" r="1.2" fill="#3a2514" />
+      <circle cx="53" cy="74" r="1.2" fill="#3a2514" />
+      <path d="M46.5,77 Q50,80 53.5,77" fill="none" stroke="#3a2514" stroke-width="1.3" stroke-linecap="round" />
+
+      <!-- Left Chubby Paw Wrapping Over Mug Handle/Front -->
+      <g transform="translate(14, 40)">
+        <ellipse cx="0" cy="0" rx="9" ry="14" fill="url(#turtleLimb)" stroke="#453221" stroke-width="3.5" transform="rotate(-15)" />
+        <ellipse cx="-2" cy="-4" rx="2.5" ry="3" fill="#889262" opacity="0.6" />
       </g>
-      <!-- Cream Rounded Toes / Claws -->
-      <ellipse cx="172" cy="434" rx="8" ry="12" fill="#fffbeb" stroke="#854d0e" stroke-width="2" />
-      <ellipse cx="190" cy="442" rx="9" ry="14" fill="#fffbeb" stroke="#854d0e" stroke-width="2" />
-      <ellipse cx="210" cy="442" rx="9" ry="13" fill="#fffbeb" stroke="#854d0e" stroke-width="2" />
     </g>
 
-    <!-- Right Front Leg -->
-    <g>
-      <path d="M337,295 C337,295 370,325 370,375 C370,425 327,445 292,442 C276,441 267,430 270,400 C274,360 297,315 337,295 Z" fill="url(#limbSkin)" stroke="#52701d" stroke-width="4.5" />
-      <!-- Spotted scales on right leg -->
-      <g fill="#70972b" opacity="0.65">
-        <circle cx="344" cy="335" r="9" />
-        <circle cx="360" cy="365" r="8" />
-        <circle cx="332" cy="368" r="9.5" />
-        <circle cx="347" cy="398" r="8" />
-        <circle cx="320" cy="398" r="8.5" />
-        <circle cx="294" cy="385" r="7.5" />
-        <circle cx="307" cy="355" r="8" />
+    <!-- RIGHT HAND ITEM: HARDCOVER BOOK WITH "Better Days :-)" -->
+    <g transform="translate(290, 305) rotate(4)">
+      <!-- Book Shadow -->
+      <ellipse cx="44" cy="104" rx="34" ry="8" fill="#543820" opacity="0.18" />
+
+      <!-- Book Pages Block (Cream/White on top & sides) -->
+      <path d="M12,16 L48,6 L56,76 L20,86 Z" fill="#fffdfa" stroke="#453221" stroke-width="3" stroke-linejoin="round" />
+      <!-- Book Top Pages lines -->
+      <path d="M16,15 L46,7" stroke="#b0a594" stroke-width="1.8" />
+      <path d="M18,17 L48,9" stroke="#b0a594" stroke-width="1.8" />
+
+      <!-- Book Front Cover (Sage-Green) -->
+      <path d="M2,18 C2,18 20,24 58,16 L66,94 C34,101 10,95 10,95 Z"
+            fill="url(#bookCover)" stroke="#453221" stroke-width="4.5" stroke-linejoin="round" />
+
+      <!-- Book Spine (Left thickness) -->
+      <path d="M2,18 L10,95 L2,93 Z" fill="#5c6747" stroke="#453221" stroke-width="3.5" />
+
+      <!-- Text on Book: "Better Days :-)" in sweet hand lettering -->
+      <text x="36" y="50" font-family="'Nunito', 'Comfortaa', 'Quicksand', 'Arial Rounded MT Bold', sans-serif"
+            font-size="13" font-weight="800" fill="#2d3320" text-anchor="middle" letter-spacing="0.2">Better</text>
+      <text x="36" y="66" font-family="'Nunito', 'Comfortaa', 'Quicksand', 'Arial Rounded MT Bold', sans-serif"
+            font-size="13" font-weight="800" fill="#2d3320" text-anchor="middle" letter-spacing="0.2">Days</text>
+      <!-- Smiley Face below (.-)) -->
+      <path d="M31,77 Q36,83 41,77" fill="none" stroke="#2d3320" stroke-width="1.8" stroke-linecap="round" />
+      <circle cx="33" cy="74" r="1.3" fill="#2d3320" />
+      <circle cx="39" cy="74" r="1.3" fill="#2d3320" />
+
+      <!-- Right Chubby Paw Clasping the Book from Edge -->
+      <g transform="translate(62, 54)">
+        <ellipse cx="0" cy="0" rx="9" ry="14" fill="url(#turtleLimb)" stroke="#453221" stroke-width="3.5" transform="rotate(20)" />
+        <circle cx="0" cy="-2" r="2.5" fill="#889262" opacity="0.6" />
       </g>
-      <!-- Cream Rounded Toes / Claws -->
-      <ellipse cx="302" cy="442" rx="9" ry="13" fill="#fffbeb" stroke="#854d0e" stroke-width="2" />
-      <ellipse cx="322" cy="442" rx="9" ry="14" fill="#fffbeb" stroke="#854d0e" stroke-width="2" />
-      <ellipse cx="340" cy="434" rx="8" ry="12" fill="#fffbeb" stroke="#854d0e" stroke-width="2" />
     </g>
 
-    <!-- RED & WHITE CHECKERED GINGHAM PLAID BOW TIE (Signature Feature!) -->
+    <!-- BIG ADORABLE ROUNDED HEAD (Sage Green with spots and lovable expression) -->
     <g>
-      <!-- Neck Band Ribbon -->
-      <path d="M192,272 Q256,295 320,272 L326,290 Q256,315 186,290 Z" fill="url(#gingham)" stroke="#991b1b" stroke-width="3" />
+      <!-- Head Base Dome -->
+      <path d="M165,220 C145,150 185,95 256,92 C327,95 367,150 347,220 C336,258 304,282 256,284 C208,282 176,258 165,220 Z"
+            fill="url(#turtleHead)" stroke="#453221" stroke-width="5.5" stroke-linejoin="round" />
 
-      <!-- Left Bow Loop -->
-      <g>
-        <path d="M246,310 C205,275 160,285 168,322 C174,350 215,355 246,326 Z" fill="url(#gingham)" stroke="#991b1b" stroke-width="4" stroke-linejoin="round" />
-        <!-- Inner shadow fold -->
-        <path d="M240,314 C215,302 185,305 182,322" stroke="#7f1d1d" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7" />
-      </g>
+      <!-- Head Top Gentle Highlights -->
+      <ellipse cx="236" cy="120" rx="44" ry="20" fill="#ffffff" opacity="0.22" />
 
-      <!-- Right Bow Loop -->
-      <g>
-        <path d="M266,310 C307,275 352,285 344,322 C338,350 297,355 266,326 Z" fill="url(#gingham)" stroke="#991b1b" stroke-width="4" stroke-linejoin="round" />
-        <!-- Inner shadow fold -->
-        <path d="M272,314 C297,302 327,305 330,322" stroke="#7f1d1d" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7" />
-      </g>
+      <!-- TORTOISE SPOTS ON FOREHEAD AND CROWN (Natural watercolor texture spots) -->
+      <g fill="#889262" opacity="0.75">
+        <!-- Top Crown Spots -->
+        <ellipse cx="256" cy="118" rx="9" ry="7" />
+        <ellipse cx="238" cy="130" rx="8" ry="6.5" />
+        <ellipse cx="274" cy="130" rx="8" ry="6.5" />
+        <ellipse cx="218" cy="142" rx="7" ry="5.5" />
+        <ellipse cx="294" cy="142" rx="7" ry="5.5" />
+        <ellipse cx="256" cy="140" rx="9.5" ry="7.5" />
 
-      <!-- Bow Tie Center Knot -->
-      <rect x="238" y="298" width="36" height="34" rx="8" ry="8" fill="url(#ginghamKnot)" stroke="#7f1d1d" stroke-width="4" />
-      <!-- Knot wrinkle highlights -->
-      <line x1="246" y1="302" x2="246" y2="328" stroke="#7f1d1d" stroke-width="2.5" opacity="0.5" />
-      <line x1="266" y1="302" x2="266" y2="328" stroke="#7f1d1d" stroke-width="2.5" opacity="0.5" />
-    </g>
-
-    <!-- BIG CHUBBY BABY TURTLE HEAD (Spherical, pastel lime, cute scutes & smiling face) -->
-    <g>
-      <!-- Head Base with Warm Lime Gradient -->
-      <ellipse cx="256" cy="186" rx="122" ry="110" fill="url(#turtleHeadSkin)" stroke="#52701d" stroke-width="5" />
-
-      <!-- Head Top Highlight (Sunlight pouring in from top-left) -->
-      <ellipse cx="225" cy="120" rx="72" ry="36" fill="#f7fee7" opacity="0.45" />
-
-      <!-- SPOTTED TURTLE SCUTES ON HEAD (Forehead & Crown, exactly as in image) -->
-      <g fill="#759e2b" opacity="0.6">
-        <!-- Top Crown Large Scutes -->
-        <polygon points="256,92 278,98 284,118 266,132 244,128 238,108" stroke="#52701d" stroke-width="2" stroke-linejoin="round" />
-        <polygon points="228,102 240,116 232,135 210,138 198,124 206,108" stroke="#52701d" stroke-width="2" stroke-linejoin="round" />
-        <polygon points="284,102 305,108 312,125 298,138 276,134 272,116" stroke="#52701d" stroke-width="2" stroke-linejoin="round" />
-        
-        <!-- Mid Forehead Scutes -->
-        <polygon points="256,134 274,142 270,160 256,166 240,160 238,142" stroke="#52701d" stroke-width="1.8" stroke-linejoin="round" opacity="0.75" />
-        <circle cx="178" cy="138" r="10" />
-        <circle cx="160" cy="158" r="9" />
-        <circle cx="334" cy="138" r="10" />
-        <circle cx="352" cy="158" r="9" />
-        <circle cx="196" cy="156" r="8" />
-        <circle cx="316" cy="156" r="8" />
-        <circle cx="212" cy="174" r="7" />
-        <circle cx="300" cy="174" r="7" />
+        <!-- Mid Brow Spots -->
+        <ellipse cx="236" cy="154" rx="7.5" ry="6" />
+        <ellipse cx="276" cy="154" rx="7.5" ry="6" />
+        <ellipse cx="256" cy="162" rx="7" ry="5" />
+        <ellipse cx="204" cy="162" rx="6" ry="5" />
+        <ellipse cx="308" cy="162" rx="6" ry="5" />
       </g>
 
-      <!-- ROSY PINK BLUSHING CHEEKS (Large, soft, adorable radial gradient) -->
-      <!-- Left Cheek -->
-      <ellipse cx="176" cy="226" rx="34" ry="24" fill="url(#cheekBlush)" />
-      <!-- Right Cheek -->
-      <ellipse cx="336" cy="226" rx="34" ry="24" fill="url(#cheekBlush)" />
+      <!-- DELICATE EYEBROWS -->
+      <path d="M196,170 Q208,165 218,171" fill="none" stroke="#686e4e" stroke-width="2.5" stroke-linecap="round" />
+      <path d="M316,170 Q304,165 294,171" fill="none" stroke="#686e4e" stroke-width="2.5" stroke-linecap="round" />
 
-      <!-- NOSTRILS (Two tiny cute dark brown dots) -->
-      <ellipse cx="247" cy="188" rx="2.5" ry="3.5" fill="#3f2e18" />
-      <ellipse cx="265" cy="188" rx="2.5" ry="3.5" fill="#3f2e18" />
-
-      <!-- SWEET HAPPY SMILE (Gentle curved dimpled 'w' mouth) -->
-      <path d="M222,198 Q238,214 256,204 Q274,214 290,198" fill="none" stroke="#362208" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
-      <!-- Little Chin Shadow below smile -->
-      <path d="M246,218 Q256,224 266,218" stroke="#688f25" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7" />
-
-      <!-- SMILING EYES: Thick curved joyful crescent arcs (^‿^) -->
+      <!-- BIG, GLOSSY, SOULFUL DARK EYES -->
       <!-- Left Eye -->
       <g>
-        <path d="M182,185 C190,162 215,160 228,180" fill="none" stroke="#2d1d06" stroke-width="8.5" stroke-linecap="round" />
-        <path d="M184,185 C190,165 214,163 226,180" fill="none" stroke="#52320b" stroke-width="4.5" stroke-linecap="round" />
+        <ellipse cx="206" cy="195" rx="14" ry="17" fill="#241a12" stroke="#453221" stroke-width="2" />
+        <!-- Big White Catchlight Highlight -->
+        <circle cx="202" cy="188" r="5" fill="#ffffff" />
+        <!-- Secondary small sparkle highlight -->
+        <circle cx="212" cy="202" r="2.2" fill="#ffffff" opacity="0.85" />
       </g>
 
       <!-- Right Eye -->
       <g>
-        <path d="M284,180 C297,160 322,162 330,185" fill="none" stroke="#2d1d06" stroke-width="8.5" stroke-linecap="round" />
-        <path d="M286,180 C298,163 322,165 328,185" fill="none" stroke="#52320b" stroke-width="4.5" stroke-linecap="round" />
+        <ellipse cx="306" cy="195" rx="14" ry="17" fill="#241a12" stroke="#453221" stroke-width="2" />
+        <!-- Big White Catchlight Highlight -->
+        <circle cx="302" cy="188" r="5" fill="#ffffff" />
+        <!-- Secondary small sparkle highlight -->
+        <circle cx="312" cy="202" r="2.2" fill="#ffffff" opacity="0.85" />
       </g>
+
+      <!-- ROSY CHEEK BLUSH (Soft and warm with subtle hand-drawn hatch lines) -->
+      <!-- Left Cheek -->
+      <ellipse cx="178" cy="225" rx="26" ry="18" fill="url(#cheekBlush)" />
+      <g stroke="#d96a60" stroke-width="2" stroke-linecap="round" opacity="0.45">
+        <line x1="168" y1="228" x2="176" y2="218" />
+        <line x1="176" y1="231" x2="184" y2="221" />
+        <line x1="184" y1="232" x2="192" y2="222" />
+      </g>
+
+      <!-- Right Cheek -->
+      <ellipse cx="334" cy="225" rx="26" ry="18" fill="url(#cheekBlush)" />
+      <g stroke="#d96a60" stroke-width="2" stroke-linecap="round" opacity="0.45">
+        <line x1="320" y1="232" x2="328" y2="222" />
+        <line x1="328" y1="231" x2="336" y2="221" />
+        <line x1="336" y1="228" x2="344" y2="218" />
+      </g>
+
+      <!-- CUTE NOSTRILS (Two tiny dots in center) -->
+      <ellipse cx="249" cy="204" rx="2.5" ry="3.2" fill="#453221" />
+      <ellipse cx="263" cy="204" rx="2.5" ry="3.2" fill="#453221" />
+
+      <!-- SWEET GENTLE SMILE (~‿~) -->
+      <path d="M232,224 Q244,238 256,238 Q268,238 280,224"
+            fill="none" stroke="#362211" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- Dimple accents -->
+      <path d="M230,222 Q232,226 234,226" fill="none" stroke="#362211" stroke-width="3" stroke-linecap="round" />
+      <path d="M282,222 Q280,226 278,226" fill="none" stroke="#362211" stroke-width="3" stroke-linecap="round" />
+    </g>
+
+    <!-- 3. UPPER RIGHT FLOATING SPEECH BUBBLE WITH RED HEART -->
+    <g filter="url(#bubbleShadow)" transform="translate(362, 54)">
+      <!-- Bubble Body & Pointer Tail -->
+      <path d="M46,10 C74,10 94,28 94,52 C94,76 74,94 46,94 C38,94 30,92 24,88 L8,96 L14,78 C10,70 8,62 8,52 C8,28 28,10 46,10 Z"
+            fill="#ffffff" stroke="#5c4431" stroke-width="4.5" stroke-linejoin="round" />
+
+      <!-- Warm Red Coral Heart Inside Bubble -->
+      <path d="M51,68 C51,68 32,54 32,41 C32,32 38,26 46,26 C50,26 53,29 55,33 C57,29 60,26 64,26 C72,26 78,32 78,41 C78,54 59,68 59,68 L55,72 Z"
+            fill="url(#heartRed)" />
+
+      <!-- Soft shine highlight on heart -->
+      <path d="M38,34 C36,38 36,44 42,48" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.6" />
     </g>
 
   </g>

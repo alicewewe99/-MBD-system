@@ -33,11 +33,11 @@ export const PWAInstallButton: React.FC = () => {
         id="pwaInstallBtn"
         onClick={handleInstallClick}
         className="group relative flex items-center gap-2 bg-amber-100 hover:bg-amber-200 text-amber-950 px-3.5 py-1.5 rounded-2xl border-2 border-amber-600 shadow-sm transition-all duration-150 cursor-pointer active:translate-y-0.5"
-        title="將可愛小烏龜 MBD通知系統加入手機或電腦桌面"
+        title="將溫暖療癒小烏龜 MBD通知系統加入手機或電腦桌面"
       >
         <img
           src="/icon.svg"
-          alt="可愛小烏龜桌面圖示"
+          alt="溫暖療癒小烏龜桌面圖示"
           className="w-5 h-5 rounded-md object-contain border border-amber-400 group-hover:scale-110 transition-transform"
           referrerPolicy="no-referrer"
         />
@@ -50,19 +50,19 @@ export const PWAInstallButton: React.FC = () => {
       {/* Installation Instruction Modal */}
       {showGuide && (
         <div
-          className="fixed inset-0 bg-amber-950/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 transition-opacity"
+          className="fixed inset-0 bg-stone-900/60 backdrop-blur-xs flex items-center justify-center p-4 z-50 transition-opacity"
           onClick={() => setShowGuide(false)}
           role="dialog"
           aria-modal="true"
         >
           <div
-            className="bg-amber-50 rounded-3xl p-6 max-w-md w-full shadow-2xl border-4 border-amber-700 text-left relative"
+            className="bg-amber-50 rounded-3xl p-6 max-w-md w-full shadow-2xl border-4 border-amber-600 text-left relative"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               type="button"
               onClick={() => setShowGuide(false)}
-              className="absolute top-4 right-4 p-1.5 rounded-full text-amber-800 hover:text-red-700 hover:bg-amber-200 transition-colors cursor-pointer"
+              className="absolute top-4 right-4 p-1.5 rounded-full text-stone-600 hover:text-red-700 hover:bg-amber-200 transition-colors cursor-pointer"
               aria-label="關閉"
             >
               <X className="w-5 h-5" />
@@ -72,12 +72,12 @@ export const PWAInstallButton: React.FC = () => {
               <img
                 src="/pwa-192x192.png"
                 alt="App Icon"
-                className="w-16 h-16 rounded-2xl shadow-md border-2 border-emerald-500 bg-amber-100 object-cover"
+                className="w-16 h-16 rounded-2xl shadow-md border-2 border-amber-500 bg-amber-100 object-cover"
                 referrerPolicy="no-referrer"
               />
               <div>
-                <h3 className="text-base font-extrabold text-amber-950">
-                  將可愛小烏龜加入桌面圖示
+                <h3 className="text-base font-extrabold text-amber-950 flex items-center gap-1">
+                  <span>☕</span> 將溫暖療癒小烏龜加入桌面
                 </h3>
                 <p className="text-xs font-bold text-amber-800">
                   隨點即開・像 App 一樣快速填寫發送
@@ -115,7 +115,7 @@ export const PWAInstallButton: React.FC = () => {
                   <li>
                     在選單中向下滑動，點選 <strong>「加入主畫面」</strong>（Add to Home Screen）。
                   </li>
-                  <li>點擊右上角「新增」，可愛的萌龜圖示就會出現在手機桌面囉！</li>
+                  <li>點擊右上角「新增」，溫暖療癒的萌龜圖示就會出現在手機桌面囉！</li>
                 </ol>
               </div>
 
